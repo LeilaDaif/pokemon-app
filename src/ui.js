@@ -17,12 +17,17 @@ export function createCard(pokemon) {
   like.textContent = "\u{1F90D}";
   card.appendChild(like);
 
-  let isFavoriet = false;
+  let isFavorieten = false;
   like.addEventListener("click", () => {
-    isFavoriet = !isFavoriet;
-    like.textContent = isFavoriet ? "\u2764\uFE0F" : "\u{1F90D}";
-    isFavoriet ? saveFavorite(pokemon) : deleteFavorite(pokemon);
+    isFavorieten = !isFavorieten;
+    like.textContent = isFavorieten ? "\u2764\uFE0F" : "\u{1F90D}";
+    isFavorieten ? saveFavorite(pokemon) : deleteFavorite(pokemon);
   });
+
+  const favorieten = getFavorite()
+  isFavorieten = favorieten.some(fav => fav.name === pokemon.name)
+  if(isFavorieten) {like.textContent = '\u2764\uFE0F'}
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -33,6 +38,7 @@ export function createCard(pokemon) {
   });
   observer.observe(card);
   return card;
+
 }
 
 // Kaartjes tonen
