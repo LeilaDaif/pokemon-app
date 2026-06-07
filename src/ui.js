@@ -15,6 +15,7 @@ export function createCard(pokemon, detail) {
 // Kaartjes tonen
 export async function displayPokemon(pokemonList){
     const grid = document.getElementById("pokemon-grid");
+    grid.innerHTML = ''
     for (const pokemon of pokemonList){
          const detail = await fetchPokemonData(pokemon.url)
          const card = createCard(pokemon, detail)
