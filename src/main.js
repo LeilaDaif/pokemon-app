@@ -7,6 +7,7 @@ async function app(){
   allePokemon = await Promise.all(data.results.map(pokemon => fetchPokemonData(pokemon.url)))
   displayPokemon(allePokemon)
   types()
+  sort()
 }
 app()
 
@@ -40,4 +41,17 @@ async function types(){
        displayPokemon(gefilterd)
   })
 
+}
+
+async function sort(){
+  const sort = document.getElementById('sort')
+  sort.addEventListener('change', ()=> {
+    if(sort.value === 'name'){
+      const gesorteerd = allePokemon.toSorted((a, b) => a.name.localeCompare(b.name))
+      displayPokemon(gesorteerd)
+    }else if(sort.value === 'id'){
+      const gesorteerd = allePokemon.toSorted((a, b) => a.id-(b.id))
+      displayPokemon(gesorteerd)
+    }
+  })
 }

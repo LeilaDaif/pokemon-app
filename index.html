@@ -11,8 +11,14 @@
       <h1>Pokémon</h1>
     </header>
     <section id="controls">
-      <select id="filter-type"></select>
-      <select id="sort"></select>
+      <select id="filter-type">
+        <option value="">Type</option>
+      </select>
+      <select id="sort">
+          <option value="">Sorteer op...</option>
+          <option value="name">Naam A-Z</option>
+          <option value="id">ID</option>
+      </select>
       <input type="search" id="search" placeholder="Zoek een Pokémon">
     </section>
     <div id="pokemon-grid"></div>
