@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pokemon-app</title>
+    <title>Pokémon-app</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>Pokémon</h1>
+    </header>
+    <section id="controls">
+      <select id="filter-type"></select>
+      <select id="sort"></select>
+      <input type="search" placeholder="Zoek een Pokémon">
+    </section>
+    <div id="pokemon-grid"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
