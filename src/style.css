@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    padding: 20px;
+    background-color: #CC0000;
+    color: white;
+}
+
+
+#controls {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #a57c7c;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 4px 10px gray;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.3s;
+
+}
+
+.card:hover {
+    transform: translateY(-6px);
+     box-shadow: 0 8px 20px gray;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.zichtbaar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    border: none;
+    background: none;
+}
