@@ -4,7 +4,7 @@ Een interactieve single-page webapplicatie gebouwd met Vite en de PokeAPI.
 
 ## Projectbeschrijving
 
-Deze app toont 30 Pokémon met hun afbeelding, naam en type. Gebruikers kunnen zoeken, filteren op type, sorteren op naam of ID, en Pokémon toevoegen aan hun favorieten. Favorieten worden bewaard tussen sessies via LocalStorage.
+Deze app toont 50 Pokémon met hun afbeelding, naam en type. Gebruikers kunnen zoeken, filteren op type, sorteren op naam of ID, en Pokémon toevoegen aan hun favorieten. Favorieten worden bewaard tussen sessies via LocalStorage.
 
 ## Functionaliteiten
 
