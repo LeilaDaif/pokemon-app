@@ -89,7 +89,6 @@ npm install
 4. Start de development server:
 bash
 npm run dev
-```
 
 5. Open je browser op `http://localhost:5173`
 
