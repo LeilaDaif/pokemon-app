@@ -94,9 +94,7 @@ npm run dev
 5. Open je browser op `http://localhost:5173`
 
 ## Screenshots
-![alt text](image.png)
-
-![Pokémon App](screenshot.png)
+![Pokémon App](Screenshot.png)
 
 ## Gebruikte bronnen
 
